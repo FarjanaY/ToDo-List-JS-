@@ -1,0 +1,198 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    
+}
+
+body{
+    background-image: linear-gradient(100deg , #031426,#8ec0f2);
+    text-align: center;
+    font-family: 'Bree Serif','Oswald';
+    min-height: 100vh;
+    
+    
+}
+
+header{
+    font-size: 40px;
+    padding: 10px;
+    padding-top: 10vh;
+    border: none;
+    color: white;
+}
+form{
+    text-align: center;
+    padding: 4px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+}
+
+.todoInput {
+    background-color: #a0caf5;
+    color : rgb(1, 0, 5);
+    text-align: center;
+    padding: .1rem;
+    font-size: medium;
+    border: none;
+    font-size: 20px;
+    text-decoration :solid;
+    transition:all 0.3s ease;
+}
+.todoAddButton {
+    background-color:  rgb(2, 53, 129);
+    color: rgb(245, 246, 247);
+    cursor: pointer;
+    border: none;
+    padding: .35rem;
+}
+.todoAddButton:hover{
+   background-color:  rgb(237, 240, 245);
+   color: rgb(2, 53, 129);
+   border: none;
+   padding: .35rem;
+}
+
+.todoInput:hover {
+    background-color: white;
+    color: rgb(1, 7, 17);
+    border: none;
+    margin: none;
+    padding: .1rem;
+}
+
+/* List item style */
+.todoContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todoList{
+    min-width: 30%;
+    list-style: none;
+    
+}
+/* Item Selection */
+.completed{
+    text-decoration:line-through;
+    background-color: #f2f4f7;
+    opacity: 0.5;
+}
+.fall{
+    transform: translateY(8rem) rotateZ('20deg');
+     opacity: 0;
+}  
+
+select{
+    outline: none;
+    border: none;
+    color:black;
+    width: 8rem;
+    background-color: whitesmoke;
+    cursor: pointer;
+    padding: .05rem;
+    border-radius: 5px;
+    
+    
+}
+.select{
+    position: relative;
+    margin: 1rem;
+    overflow: hidden;
+    color:rgb(243, 242, 242); 
+    cursor: pointer; 
+    
+}
+
+
+option{
+    
+    background-color: white;
+    text-align: center;
+    font-family: 'Bree Serif','Oswald';
+    text-decoration :solid;
+    
+}
+option:hover{
+    
+    background-color: #062e69;
+    color: white;
+    border-radius: 4px;
+    border-color: #062e69;
+}
+
+.listItem{
+    margin:0.3rem;
+    border-radius: 2px;
+    background-color: #a0caf5;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration :solid;
+    padding-left: 15px;
+    
+}
+ .listItem span{
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 1rem;
+}
+#checkBtn , #deleteBtn{
+    background-color: #062e69;
+    color: #fdfdfd;
+    border: none;
+    cursor: pointer;
+    padding: .35rem;
+}
+
+#checkBtn:hover{
+    background-color: green;
+    color: white;
+    border: none;
+}
+#deleteBtn:hover{
+    color: white;
+    background-color:rgb(223, 90, 90);
+    border: none;
+   
+}
+
+#fa-check{
+    pointer-events: none;
+} 
+
+.msgContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#message{
+    min-width: 40%;
+
+    
+}
+.msgSuccess{
+    margin: .5rem ;
+    padding: 0.1rem;
+    font-size: 13px;
+    color: black;
+    background-color: rgb(184, 207, 250);
+    border-left: 5px solid rgb(19, 186, 241);
+    border-right: 5px solid  rgb(19, 191, 248);
+}
+
+.msgDelete{
+    margin: .5rem ;
+    padding: 0.1rem;
+    font-size: 13px;
+    color: black;
+    background-color: rgb(248, 223, 230);
+    border-left: 5px solid rgb(236, 121, 130);
+    border-right: 5px solid rgb(235, 126, 135);
+}

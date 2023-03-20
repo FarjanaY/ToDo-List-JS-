@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- External links -->
+    <!-- Google font added (Bree Serif & Oswald)-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <!-- Font awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- Internal Links -->
+    <link rel="stylesheet" href="./style.css">
+    <title>ToDo App Project</title>
+</head>
+    <body>
+
+        <!-- App header -->
+        <header>
+            <h1>ToDo App</h1>
+        </header>
+        
+
+        <!-- List item input form -->
+        <form class="todoForm">
+            <input type="text" class="todoInput" placeholder="Enter a todo item here." required>
+            <button type="submit" class="todoAddButton">
+                <i class="fa-solid fa-square-plus"></i>
+            </button>
+        </form> 
+
+        <!-- Item Selection -->
+        <div class="select">
+            <select name="totos" id="filterTodo">
+                <option value="all">All</option>
+                <option value="completed">Completed</option>
+                <option value="pending">Pending</option>
+            </select>
+        </div>
+
+        <!-- showing message for delete and add item -->
+        <div class="msgContainer">
+            <p id="message"></p>
+        </div>
+
+        <!-- List item show -->
+        <div class="todoContainer">
+            <ul class="todoList"></ul>
+        </div>
+        
+    
+        <!-- Add JavaScript File -->
+        <script src = "./app.js"></script>
+    </body>
+</html>
